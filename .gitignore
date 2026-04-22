@@ -1,0 +1,8 @@
+.DS_Store
+*.zip
+
+# Keep heavy portfolio source/export files local. GitHub is unreliable for large binary uploads.
+Main Files/html/bootstrap5/color_version-MYPORTFOLIO/assets/**/*.pdf
+Main Files/html/bootstrap5/color_version-MYPORTFOLIO/assets/**/*.mp4
+Main Files/html/bootstrap5/color_version-MYPORTFOLIO/assets/**/*.ai
+Main Files/html/bootstrap5/color_version-MYPORTFOLIO/assets/**/*.eps
