@@ -9459,3 +9459,264 @@ h3.education_place {
         transform: none;
     }
 }
+
+/* Mobile responsive polish */
+@media (max-width: 767px) {
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .container,
+    .container-fluid {
+        max-width: 100%;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .port_sec_warapper,
+    .port_bannerbg_wrapper,
+    .port_banner_wrapper,
+    .projects_section,
+    .selfintro_section,
+    .education_section,
+    .experience_section,
+    .services_section,
+    .progress_section {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .port_togglebox {
+        top: 20px;
+        right: 22px;
+        width: 28px;
+    }
+
+    .port_sidebar_wrapper {
+        width: min(88vw, 120px);
+    }
+
+    .port_banner_wrapper {
+        min-height: auto;
+        padding-bottom: 28px;
+    }
+
+    .port_banner_wrapper .banner_content {
+        padding: 82px 0 22px;
+        text-align: left;
+    }
+
+    .bannner_leftpart {
+        max-width: 100%;
+    }
+
+    .bannner_leftpart .banner_name {
+        margin-left: 0;
+        font-size: 42px;
+        line-height: 1.05;
+        overflow-wrap: anywhere;
+    }
+
+    p.banner_pera {
+        font-size: 20px;
+        line-height: 1.25;
+    }
+
+    .hero_summary {
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 1.65;
+    }
+
+    .hero_skill_list {
+        grid-template-columns: 1fr;
+    }
+
+    .banner_btn {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+        max-width: 260px;
+    }
+
+    .banner_btn .portfolio_btn {
+        width: 100%;
+        min-width: 0;
+        margin: 0;
+    }
+
+    .hero_photo_wrap {
+        margin-top: 12px;
+    }
+
+    .project_story_card,
+    .project_story_card_chari,
+    .project_story_card_moseable {
+        padding: 22px 16px;
+        border-radius: 22px;
+    }
+
+    .portfolio_storyboard {
+        gap: 22px;
+    }
+
+    .project_story_card_chari .project_story_title_badge,
+    .moseable_title_badge,
+    .client_content_title_badge {
+        width: 100%;
+        max-width: 100%;
+        padding: 16px 18px;
+        border-radius: 24px;
+        text-align: center;
+    }
+
+    .chari_title_line {
+        white-space: normal;
+    }
+
+    .chari_story_highlight {
+        grid-template-columns: 1fr;
+        align-items: start;
+        gap: 10px;
+    }
+
+    .chari_story_highlight span {
+        justify-content: flex-start;
+        width: fit-content;
+    }
+
+    .chari_reel_stage {
+        margin-top: 12px;
+    }
+
+    .chari_reel_phone {
+        width: min(100%, 292px);
+    }
+
+    .brand_identity_header {
+        margin-bottom: 22px;
+    }
+
+    .brand_identity_panel {
+        min-width: 0;
+    }
+
+    .brand_logo_tile {
+        width: 100%;
+        min-height: 170px;
+    }
+
+    .brand_logo_tile_checksafe_mark img {
+        max-width: 360px;
+        height: 222px;
+        transform: scale(1.28);
+    }
+
+    .site_build_note {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 24px 16px 30px;
+        overflow: hidden;
+    }
+
+    .site_build_note h3 {
+        font-size: 26px;
+        line-height: 1.22;
+    }
+
+    .site_build_note p {
+        font-size: 16px;
+        line-height: 1.55;
+    }
+
+    .site_build_note_visual {
+        width: 100%;
+        justify-self: center;
+    }
+
+    .site_build_image_wrap {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        transform: none;
+    }
+
+    .client_content_header h3,
+    .project_story_copy h3,
+    h2.project_heading {
+        font-size: 26px;
+        line-height: 1.22;
+        overflow-wrap: anywhere;
+    }
+
+    .client_video_showcase_grid,
+    .banner_reveal_grid,
+    .project_child_gallery_grid,
+    .project_child_media_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .banner_reveal_button,
+    .project_media_slot,
+    .project_media_cover {
+        min-width: 0;
+    }
+
+    .worked_with_band {
+        overflow: hidden;
+    }
+
+    .worked_with_inner {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .portfolio_footer_inner,
+    .portfolio_footer_details {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio_footer_intro h2 {
+        font-size: 30px;
+        line-height: 1.18;
+    }
+}
+
+@media (max-width: 420px) {
+    .container,
+    .container-fluid {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .bannner_leftpart .banner_name {
+        font-size: 36px;
+    }
+
+    .hero_intro_badge {
+        font-size: 18px;
+    }
+
+    .project_story_card,
+    .project_story_card_chari,
+    .project_story_card_moseable,
+    .brand_identity_card {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .brand_identity_panel_header h4 {
+        font-size: 18px;
+    }
+
+    .brand_logo_tile_checksafe_mark img {
+        max-width: 320px;
+        height: 198px;
+        transform: scale(1.18);
+    }
+
+    .site_build_image_wrap {
+        aspect-ratio: 1 / 1;
+    }
+}
