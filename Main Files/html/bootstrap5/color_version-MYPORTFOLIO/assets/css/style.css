@@ -2908,17 +2908,18 @@ h2.project_heading:after {
 }
 
 .brand_logo_tile_narrlit_mark {
-    padding: 0;
+    padding: 30px;
     border-color: rgba(172, 238, 38, 0.42);
-    background: transparent;
+    background:
+        linear-gradient(180deg, #ffffff 0%, #fbfcff 100%);
 }
 
 .brand_logo_tile_narrlit_mark img {
-    max-width: none;
+    max-width: 190px;
     width: 100%;
-    height: 100%;
-    border-radius: 26px;
-    object-fit: cover;
+    height: 132px;
+    border-radius: 18px;
+    object-fit: contain;
 }
 
 .brand_logo_tile_wordmark img {
@@ -2931,9 +2932,9 @@ h2.project_heading:after {
 }
 
 .brand_logo_tile_checksafe_mark img {
-    max-width: 360px;
-    height: 220px;
-    transform: scale(1.18);
+    max-width: 560px;
+    height: 342px;
+    transform: scale(1.62);
 }
 
 .brand_logo_tile_checksafe_wordmark {
@@ -2944,6 +2945,7 @@ h2.project_heading:after {
 .brand_logo_tile_checksafe_wordmark img {
     max-width: 166px;
     height: 122px;
+    transform: none;
 }
 
 .site_build_note {
@@ -9376,22 +9378,23 @@ h3.education_place {
 
     .brand_logo_tile_narrlit_mark {
         min-height: 178px;
-        padding: 0;
+        padding: 24px;
     }
 
     .brand_logo_tile_narrlit_mark img {
-        max-width: none;
-        height: 100%;
+        max-width: 176px;
+        height: 118px;
     }
 
     .brand_logo_tile_checksafe_mark img {
-        max-width: 286px;
-        height: 176px;
-        transform: scale(1.14);
+        max-width: 430px;
+        height: 266px;
+        transform: scale(1.48);
     }
 
     .brand_logo_tile_checksafe_wordmark img {
         max-width: 150px;
         height: 108px;
+        transform: none;
     }
 }
