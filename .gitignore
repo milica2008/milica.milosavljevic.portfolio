@@ -6,3 +6,14 @@ Main Files/html/bootstrap5/color_version-MYPORTFOLIO/assets/**/*.pdf
 Main Files/html/bootstrap5/color_version-MYPORTFOLIO/assets/**/*.mp4
 Main Files/html/bootstrap5/color_version-MYPORTFOLIO/assets/**/*.ai
 Main Files/html/bootstrap5/color_version-MYPORTFOLIO/assets/**/*.eps
+
+# Keep unused template/demo folders local; the active site lives in color_version-MYPORTFOLIO.
+Main Files/documentation/
+Main Files/html/bootstrap3/
+Main Files/html/bootstrap5/black_version/
+Main Files/html/bootstrap5/black_version_typed/
+Main Files/html/bootstrap5/black_version_video/
+Main Files/html/bootstrap5/new_dark/
+Main Files/html/bootstrap5/white_version/
+Main Files/html/bootstrap5/white_version_typed/
+Main Files/html/bootstrap5/white_version_video/
