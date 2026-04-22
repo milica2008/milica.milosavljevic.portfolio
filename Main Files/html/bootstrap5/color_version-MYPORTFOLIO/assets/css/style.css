@@ -2879,6 +2879,7 @@ h2.project_heading:after {
 }
 
 .brand_logo_tile {
+    position: relative;
     min-height: 214px;
     border-radius: 26px;
     display: flex;
@@ -2894,7 +2895,35 @@ h2.project_heading:after {
         0 14px 28px rgba(85, 109, 145, 0.08);
 }
 
+.brand_logo_tile:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(circle at 28% 24%, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0) 34%),
+        radial-gradient(circle at 76% 78%, rgba(85, 109, 145, 0.18) 0%, rgba(85, 109, 145, 0) 44%),
+        linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(226, 235, 248, 0.3) 100%);
+    opacity: 1;
+}
+
+.brand_logo_tile:after {
+    content: "";
+    position: absolute;
+    inset: 14px;
+    border-radius: 20px;
+    pointer-events: none;
+    background-image:
+        linear-gradient(rgba(85, 109, 145, 0.075) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(85, 109, 145, 0.075) 1px, transparent 1px);
+    background-size: 22px 22px;
+    mask-image: linear-gradient(135deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0));
+    -webkit-mask-image: linear-gradient(135deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0));
+}
+
 .brand_logo_tile img {
+    position: relative;
+    z-index: 1;
     display: block;
     width: 100%;
     max-width: 190px;
@@ -2911,7 +2940,8 @@ h2.project_heading:after {
     padding: 30px;
     border-color: rgba(172, 238, 38, 0.42);
     background:
-        linear-gradient(180deg, #ffffff 0%, #fbfcff 100%);
+        radial-gradient(circle at 50% 48%, rgba(172, 238, 38, 0.34) 0%, rgba(172, 238, 38, 0) 50%),
+        linear-gradient(180deg, #ffffff 0%, #f8fdec 100%);
 }
 
 .brand_logo_tile_narrlit_mark img {
@@ -2927,9 +2957,16 @@ h2.project_heading:after {
     max-width: 190px;
 }
 
+.brand_logo_tile_wordmark {
+    background:
+        radial-gradient(circle at 50% 50%, rgba(172, 238, 38, 0.24) 0%, rgba(172, 238, 38, 0) 48%),
+        linear-gradient(180deg, #ffffff 0%, #f9fcf2 100%);
+}
+
 .brand_logo_tile_checksafe_mark {
     background:
-        linear-gradient(180deg, #ffffff 0%, #fbfcff 100%);
+        radial-gradient(circle at 52% 48%, rgba(216, 27, 96, 0.24) 0%, rgba(216, 27, 96, 0) 50%),
+        linear-gradient(180deg, #ffffff 0%, #fbf8fc 100%);
 }
 
 .brand_logo_tile_checksafe_mark img {
@@ -2940,7 +2977,8 @@ h2.project_heading:after {
 
 .brand_logo_tile_checksafe_wordmark {
     background:
-        linear-gradient(180deg, #ffffff 0%, #fbfcff 100%);
+        radial-gradient(circle at 52% 48%, rgba(216, 27, 96, 0.24) 0%, rgba(216, 27, 96, 0) 50%),
+        linear-gradient(180deg, #ffffff 0%, #fbf8fc 100%);
 }
 
 .brand_logo_tile_checksafe_wordmark img {
@@ -3050,7 +3088,7 @@ h2.project_heading:after {
 
 .site_build_note_visual {
     justify-self: end;
-    width: min(100%, 500px);
+    width: min(100%, 620px);
     min-height: 0;
     position: relative;
     display: grid;
@@ -3076,42 +3114,63 @@ h2.project_heading:after {
 
 .site_build_image_wrap {
     position: relative;
-    width: 88%;
+    width: 112%;
     justify-self: center;
-    border-radius: 0;
-    transform: rotate(1deg);
+    aspect-ratio: 16 / 10;
+    border-radius: 34px;
+    overflow: hidden;
+    transform: rotate(0.4deg);
     z-index: 1;
+    background:
+        radial-gradient(circle at 34% 28%, rgba(24, 199, 204, 0.16), rgba(24, 199, 204, 0) 42%),
+        radial-gradient(circle at 82% 70%, rgba(255, 196, 84, 0.18), rgba(255, 196, 84, 0) 46%),
+        linear-gradient(135deg, rgba(255, 255, 255, 0.64), rgba(248, 253, 253, 0.16));
+    box-shadow:
+        0 34px 58px rgba(20, 33, 61, 0.14),
+        0 0 0 1px rgba(24, 199, 204, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.82);
+    mask-image:
+        linear-gradient(90deg, transparent 0%, #000 8%, #000 92%, transparent 100%),
+        linear-gradient(180deg, transparent 0%, #000 9%, #000 91%, transparent 100%);
+    mask-composite: intersect;
+    -webkit-mask-image:
+        linear-gradient(90deg, transparent 0%, #000 8%, #000 92%, transparent 100%),
+        linear-gradient(180deg, transparent 0%, #000 9%, #000 91%, transparent 100%);
+    -webkit-mask-composite: source-in;
     transition: transform 0.38s ease, filter 0.38s ease;
 }
 
 .site_build_image_wrap:before {
     content: "";
     position: absolute;
-    inset: 44% 8% -10%;
-    border-radius: 50%;
+    inset: 0;
+    border-radius: inherit;
     background:
-        radial-gradient(ellipse at 50% 52%, rgba(20, 33, 61, 0.26), rgba(20, 33, 61, 0.12) 40%, rgba(20, 33, 61, 0) 72%),
-        radial-gradient(ellipse at 62% 48%, rgba(24, 199, 204, 0.14), rgba(24, 199, 204, 0) 64%);
-    filter: blur(24px);
-    opacity: 0.9;
-    z-index: -1;
+        radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 32%),
+        linear-gradient(135deg, rgba(255, 255, 255, 0.18), rgba(24, 199, 204, 0.08), rgba(255, 196, 84, 0.1));
+    opacity: 0.72;
+    z-index: 2;
     transition: opacity 0.38s ease, transform 0.38s ease;
+    pointer-events: none;
 }
 
 .site_build_image_wrap img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
-    border-radius: 0;
+    object-fit: cover;
+    object-position: center;
+    border-radius: inherit;
+    opacity: 0.96;
+    mix-blend-mode: multiply;
     filter:
-        drop-shadow(0 34px 34px rgba(20, 33, 61, 0.19))
-        drop-shadow(0 18px 34px rgba(24, 199, 204, 0.12))
-        drop-shadow(0 8px 20px rgba(255, 196, 84, 0.14));
+        saturate(1.03)
+        contrast(1.02);
     transform: translateZ(0);
 }
 
 .site_build_note:hover .site_build_image_wrap {
-    transform: translateY(-10px) rotate(-1.5deg) scale(1.035);
+    transform: translateY(-10px) rotate(-0.8deg) scale(1.025);
     filter: saturate(1.08);
 }
 
@@ -3299,7 +3358,7 @@ h2.project_heading:after {
 
     .site_build_note_visual {
         justify-self: center;
-        width: min(100%, 470px);
+        width: min(100%, 560px);
     }
 }
 
@@ -3333,11 +3392,12 @@ h2.project_heading:after {
     }
 
     .site_build_image_wrap {
-        width: 96%;
+        width: 108%;
+        border-radius: 26px;
     }
 
     .site_build_image_wrap img {
-        border-radius: 0;
+        border-radius: inherit;
     }
 }
 
